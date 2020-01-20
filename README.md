@@ -1,6 +1,37 @@
 # Algos
 Solutions to famous algorithmic problems
 
+
+Books: 
+1. Cracking the coding interview
+2. Introduction to Algorithms
+3. Programming Interviews Exposed
+4. Clean code
+5. Aalgorithm Design Manual
+6. How to think About Algorithms
+7. Programming Pearls
+8. Data Structures And Algorithms Made Easy In Java 2nd Edition 
+
+Websites:
+1.InterviewBit
+2.HackerRank
+3.Codewars
+4.Codefights
+5.AlgoExpert
+6.CareerCup
+7.Interview Cake
+8. LeetCode
+9.Geeks for geeks
+10.Pramp
+11.hackerEarth
+12.HiredInTech
+
+Courses:
+1.Coderust 2.0
+
+
+
+
 Install Jest to test: (sudo) npm install -g jest ?
 Run jest ??
 
