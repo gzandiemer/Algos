@@ -18,13 +18,13 @@ function makeObject(str) {
 
         // check if char already exists, if yes increase the count, if not equalize it to one
         // if (!chars[char]) {
-        //     cchars[char] = 1;
+        //     chars[char] = 1;
         // } else {
         //     chars[char]++;
         // }
 
         //instead of above if/else: 
-        // if it is null, +1 will lokk falsy, so it will then equalize it to 1
+        // if it is null, +1 will look falsy, so it will then equalize it to 1
         chars[char] = chars[char] + 1 || 1;
     }
     chars;

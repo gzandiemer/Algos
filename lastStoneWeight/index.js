@@ -21,6 +21,7 @@
 // 1 <= stones.length <= 30
 //1 <= stones[i] <= 1000
 
+//my solution
 /**
  * @param {number[]} stones
  * @return {number}
