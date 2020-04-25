@@ -1,5 +1,3 @@
-//input integers
-
 var insertionSort = function(arr) {
 
    for(let i=1; i<arr.length; i++){
