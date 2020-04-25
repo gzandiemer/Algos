@@ -11,23 +11,22 @@ const mergeSort = function(arr){
 
 const merge = function(arr1, arr2) {
    const merged = [];
-   const hasItem = (arr) => arr.length > 0 ? true : false;
-   while(hasItem(arr1) && hasItem(arr2)){
-     if(arr1[0]<arr2[0]){
-       merged.push(arr1[0]);
-       arr1.splice(0,1);
-       
+   let i =0;
+   let j = 0;
+   while(merged.length<=arr1.length + arr2.length){
+     if(i == arr1.length) return merged.concat(arr2.splice(j,arr2.length-j))
+     if(j == arr2.length) return merged.concat(arr1.splice(i, arr1.length-i))
+     if(arr1[i]<arr2[j]){
+       merged.push(arr1[i]);
+       i++; 
      } else {
-       merged.push(arr2[0]);
-       arr2.splice(0,1);;
-     }
+       merged.push(arr2[j]);
+       j++;
+     } 
      
-     
-   }
-   return hasItem(arr1) ? merged.concat(arr1) 
-            : hasItem(arr2) ? 
-            merged.concat(arr2)
-            : merged;
+   } 
+   
+   return merged;
 }
 
 module.exports = {mergeSort, merge}
