@@ -4,7 +4,7 @@ test('mostFrequentElement function exists', () => {
   expect(typeof mostFrequentElement).toEqual('function')
 })
 
-test('Finds the most likely sum', () => {
+test('most frequent is 7', () => {
   expect(
     mostFrequentElement(
       2,
