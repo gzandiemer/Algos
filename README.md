@@ -3,7 +3,7 @@ Solutions to famous algorithmic problems
 
 A - Install Jest to test: (sudo) npm install -g jest ?
    to run all the tests:  $ jest
-   to run single test in a folder run: $ jest fibonnacci/test.js --watch
+   to run single test in a folder run: $ jest [folderName]/test.js --watch
    to stop it running tests: Ctrl + c
 
 B - DEBUGGER steps: 
