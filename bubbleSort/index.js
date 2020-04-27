@@ -9,7 +9,7 @@
 const bubbleSort = function(arr) {
   let size = arr.length;
   for(let i=1; i<size; i++){
-    for(let j=size; j>=i; j--){
+    for(let j=size-1; j>=i; j--){
       if(arr[j]<arr[j-1]) {
         let temp = arr[j];
         arr[j] = arr[j-1];
