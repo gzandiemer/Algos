@@ -6,18 +6,21 @@
 
 // my solution
 
-var maxSubArray = function(nums) {
-    let maxSum = nums[0];
-    while(nums.length>0) {
-      let tempSum = 0;
-      for(let num of nums) {
-        tempSum += num;
-        if(tempSum > maxSum) maxSum = tempSum;
-      }
-      nums.shift();
+var maxSubArray = function (nums) {
+  let maxSum = nums[0];
+  while (nums.length > 0) {
+    let tempSum = 0;
+    for (let num of nums) {
+      tempSum += num;
+      if (tempSum > maxSum) maxSum = tempSum;
     }
-    
-    return maxSum; 
+    nums.shift();
+  }
+
+  return maxSum;
 };
+
+//Divide and conquer
+
 
 module.exports = maxSubArray;
