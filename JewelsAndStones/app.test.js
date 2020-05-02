@@ -1,12 +1,6 @@
 const app = require('./app.js');
 
 describe('Args', () => {
-    // it('should receive two args', () => {
-    //     expect(app.hasTwoArgs("x")).toBeFalsy();
-    //     expect(app.hasTwoArgs("x", "y")).toBeTruthy();
-    //     expect(app.hasTwoArgs("x", "y", "z")).toBeFalsy();
-    // });
-
     it('should receive only string as args', () => {
         expect(app.isString(1)).toBeFalsy();
         expect(app.isString("1")).toBeTruthy();

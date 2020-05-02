@@ -17,4 +17,5 @@ Note:
 S and J will consist of letters and have length at most 50.
 The characters in J are distinct.
 
-HINT: 
+TO RUN TEST: 
+$jest JewelsAndStones/app.test.js --watch
