@@ -2,14 +2,8 @@ const isString = arg => typeof arg === 'string';
 
 const hasOnlyLetters = str => /^[a-zA-Z]+$/.test(str);
 
-const hasDistinctItems = (str) => {
-    let charMap = {};
-    for (let char of str) {
-        if (charMap[char]) return false;
-        else charMap[char] = 1;
-    }
-    return true;
-}
+const hasDistinctItems = (str) => (new Set(str)).size == str.length;
+
 
 const areArgsValid = function () {
     return (isString(arguments[0]) && isString(arguments[1]) && hasOnlyLetters(arguments[0]) && hasOnlyLetters(arguments[1])

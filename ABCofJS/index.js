@@ -33,3 +33,5 @@ const hasUniqueItems = (str) => {
     }
     return true;
 }
+//or a shorter way: 
+const hasDistinctItems = (str) => (new Set(str)).size == str.length;
