@@ -20,3 +20,16 @@ for (let i = 0, j = names.length; i < j; i++) {
     doSomeThingWith(names[i]);
 }
 
+//A str has only letters 
+const hasOnlyLetters = str => /^[a-zA-Z]+$/.test(str);
+
+//A str has only unique numbers
+const hasUniqueItems = (str) => {
+    let charMap = {};
+    for (let char of str) {
+        if (charMap[char]) return false;
+
+        else charMap[char] = 1;
+    }
+    return true;
+}

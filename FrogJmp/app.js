@@ -17,7 +17,7 @@ const runChallenge = (currentLocation, nextLocation, distance) => {
     const opts = {
         currentLocation,
         nextLocation,
-        distance,
+        distance
     };
 
     return areArgsInvalid(opts) ?
@@ -25,5 +25,5 @@ const runChallenge = (currentLocation, nextLocation, distance) => {
 }
 
 module.exports = {
-    runChallenge,
+    runChallenge, nOfJumps, areArgsInvalid, isNumber
 };

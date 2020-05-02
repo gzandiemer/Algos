@@ -1,5 +1,5 @@
 
-const app = require('./app2.js.js');
+const app = require('./app2.js');
 
 describe('Frogs', () => {
     describe('Args', () => {
