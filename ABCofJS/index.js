@@ -35,3 +35,26 @@ const hasUniqueItems = (str) => {
 }
 //or a shorter way: 
 const hasDistinctItems = (str) => (new Set(str)).size == str.length;
+
+//make an array of number from 1 to 10
+[...Array(10).keys()].map(x => ++x);
+//OR f
+[...Array(num + 1).keys()].slice(1)
+//[1,2,3,4,5,6,7,8,9,10] 
+//from 0 to 9
+[...Array(10).keys()]
+//[0,1,2,3,4,5,6,7,8,9] 
+
+
+const isSquare = num => Math.sqrt(num) % 1 === 0; //
+
+const getSquares = arr => arr.map(x => Math.pow(x, 2));
+
+const divisors = num => [...Array(num + 1).keys()].slice(1).filter(x => num % x == 0);
+//OR
+const getDivisors = (num) => {
+    const nums = [...Array(num).keys()].map(x => ++x)
+    return nums.filter(x => num % x == 0);
+}
+
+const getSum = (arr) => arr.reduce((a, b) => a + b, 0);
