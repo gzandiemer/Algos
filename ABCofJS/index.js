@@ -39,10 +39,10 @@ const hasDistinctItems = (str) => (new Set(str)).size == str.length;
 //make an array of number from 1 to 10
 [...Array(10).keys()].map(x => ++x);
 //OR f
-[...Array(num + 1).keys()].slice(1)
+[...Array(num + 1).keys()].slice(1);
 //[1,2,3,4,5,6,7,8,9,10] 
 //from 0 to 9
-[...Array(10).keys()]
+[...Array(10).keys()];
 //[0,1,2,3,4,5,6,7,8,9] 
 
 
